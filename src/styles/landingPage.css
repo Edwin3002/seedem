@@ -3,6 +3,7 @@
   --primary: hsl(180, 66%, 49%);
   --primary-dark: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
+  --neutral-gray2: hsl(225, 33%, 95%);
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
   --neutral-dark-gray: hsl(255, 11%, 22%);
@@ -10,14 +11,24 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: white;
+  /* background: white;
+   */
 }
 
-
 /* //formLink */
-.formLink{
-    background-color: var(--primary-dark);
-    z-index: -10;
+.containerForm {
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 50%,
+    var(--neutral-gray2) 50%,
+    var(--neutral-gray2) 100% /* var(--neutral-violet) 50%, */
+      /* var(--neutral-violet) 100% */
+  );
+}
+.formLink {
+  background-color: var(--primary-dark);
+  z-index: -10;
 }
 
 .btn {
@@ -28,3 +39,43 @@ body {
   color: white;
 }
 
+/* cards */
+.containerCards {
+  background: var(--neutral-gray2);
+}
+.imgCard {
+  background: var(--primary-dark);
+  padding: 1rem;
+  border-radius: 3rem;
+  top: -15%;
+}
+.vl {
+  border-color: var(--primary);
+  border-left: 8px solid var(--primary);
+  height: 800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: 25%;
+}
+@media (min-width: 1024px) {
+  .vl {
+    border-top: 8px solid var(--primary);
+    border-left: none;
+    width: 500px;
+    left: 25%;
+    margin-top: -6px;
+    top: 35%;
+  }
+}
+@media (min-width: 1256px) {
+  .vl {
+    width: 800px;
+    top: 65%;
+  }
+}
+@media (min-width: 1750px) {
+  .vl {
+    width: 1000px;
+  }
+}

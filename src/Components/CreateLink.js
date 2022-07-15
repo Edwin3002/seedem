@@ -7,7 +7,7 @@ export const CreateLink = () => {
         console.log('send');
     }
     return (
-        <div className='my-12'>
+        <div className='py-12 containerForm'>
             <div className='formLink p-4 m-4 lg:p-10  lg:w-4/5 lg:mx-auto rounded bg-contain lg:bg-cover bg-no-repeat bg-right-top
             //  bg-[url("https://res.cloudinary.com/edwin3002/image/upload/v1657844423/seedem/bg-shorten-mobile_pocqzq.svg")]
              lg:bg-[url("https://res.cloudinary.com/edwin3002/image/upload/v1657844422/seedem/bg-shorten-desktop_acxqvi.svg")]'>
