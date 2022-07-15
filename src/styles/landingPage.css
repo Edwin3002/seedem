@@ -44,12 +44,29 @@ body {
   background-color: var(--primary-dark);
   z-index: -10;
 }
-.link:required{
+.link{
+  border: 3px solid white;
+}
+.link:invalid {
+  border-color: var(--secondary);
+}
+.link:valid {
+  border-color: #4bcc4b;
+  background-color: #ddffdd;
+}
+
+/* .link:required:invalid {
+  border-color: blue;
+} */
+/* .link{
+  border: 2px solid var(--primary);
+}
+.link:invalid ~ .errorMSG{
   border: 2px solid var(--secondary);
-}
-.link::placeholder{
   color: var(--secondary-placeHolder);
-}
+} */
+/* .link::placeholder{
+} */
 .btn {
   background: var(--primary) !important;
   padding: 1rem 2rem;
