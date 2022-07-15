@@ -13,7 +13,7 @@ export const PrincipalContent = () => {
             <button className='btn w-1/2 lg:w-2/5'>Get Started</button>
         </div>
         <spa className='mx-auto'>
-            <img src='https://res.cloudinary.com/edwin3002/image/upload/v1657844723/seedem/illustration-working-2_usqusy.svg' />
+            <img alt='desktop' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844723/seedem/illustration-working-2_usqusy.svg' />
         </spa>
     </div>
   )

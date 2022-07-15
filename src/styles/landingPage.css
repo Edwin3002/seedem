@@ -3,7 +3,7 @@
   --primary: hsl(180, 66%, 49%);
   --primary-dark: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
-  --neutral-gray2: hsl(225, 33%, 95%);
+   --neutral-gray2: hsl(225, 33%, 95%);  /* fondo cards */
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
   --neutral-dark-gray: hsl(255, 11%, 22%);
@@ -65,17 +65,29 @@ body {
     width: 500px;
     left: 25%;
     margin-top: -6px;
-    top: 35%;
+    top: 38%;
+    height: 100px;
+
   }
 }
 @media (min-width: 1256px) {
   .vl {
     width: 800px;
-    top: 65%;
+    top: 63%;
   }
 }
 @media (min-width: 1750px) {
   .vl {
     width: 1000px;
   }
+}
+
+/* footer */
+
+.containerFoot{
+    /* background: var(--neutral-gray2); */
+    background: var(--neutral-dark-violet);
+}
+.textFoot{
+    color: var(--neutral-violet);
 }

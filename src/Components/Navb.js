@@ -6,12 +6,14 @@ export const Navb = () => {
             <div className='flex w-1/3 lg:hidden '>
                 <ul className='flex w-full justify-between items-center'>
                     <li>
-                        <h2 className='text-2xl font-bold'>Shortly</h2>
+                    <div className='mt-12'>
+                    <img className='mx-auto' alt='Shortly' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844426/seedem/logo_jgfdfh.svg' />
+                </div>
+                        {/* <h2 className='text-2xl font-bold'>Shortly</h2> */}
                     </li>
                     <li>
                         <a>navbar</a>
                     </li>
-
                 </ul>
             </div>
             <div className='hidden w-1/3 lg:flex '>

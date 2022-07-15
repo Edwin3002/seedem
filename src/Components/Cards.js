@@ -8,8 +8,8 @@ export const Cards = () => {
                 <h2 className='text-3xl font-bold'>Advanced Statistics</h2>
                 <p className='my-8'>Track how your links are performing across the web with our advanced statistics dashboard</p>
             </div>
-            <div className='flex flex-col justify-around flex-wrap w-11/12 mx-auto lg:flex-row items-center my-8 text-center lg:text-left'>
-                <div className='bg-white max-w-sm p-8 my-20 lg:mx- relative rounded-md'>
+            <div className='flex flex-col justify-around flex-wrap w-11/12 mx-auto lg:flex-row items-center py-8 text-center lg:text-left'>
+                <div className='bg-white max-w-sm p-8 mb-20 lg:mx- relative rounded-md'>
                     <span className='imgCard absolute left-[40%] lg:left-8  mx-auto'>
                         <img src='https://res.cloudinary.com/edwin3002/image/upload/v1657844423/seedem/icon-brand-recognition_nlurxq.svg' alt='brand' />
                     </span>
@@ -20,15 +20,15 @@ export const Cards = () => {
                     <span className='imgCard absolute left-[40%] lg:left-8  mx-auto'>
                         <img src='https://res.cloudinary.com/edwin3002/image/upload/v1657844423/seedem/icon-detailed-records_x0qqxl.svg' alt='brand' />
                     </span>
-                    <h3 className='text-2xl font-bold mt-6'>Brand Recognition</h3>
-                    <p className='mt-4'>Boost your brand recognition with each clink. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                    <h3 className='text-2xl font-bold mt-6'>Detailed Records</h3>
+                    <p className='mt-4'>Gain insights into who is clicking your links. Knowing when and where people enage with your content helps inform better decisions.</p>
                 </div>
-                <div className='bg-white max-w-sm p-8 my-20 lg:mx- relative rounded-md'>
+                <div className='bg-white max-w-sm p-8 mt-20 lg:mx- relative rounded-md'>
                     <span className='imgCard absolute left-[40%] lg:left-8  mx-auto'>
                         <img src='https://res.cloudinary.com/edwin3002/image/upload/v1657844423/seedem/icon-brand-recognition_nlurxq.svg' alt='brand' />
                     </span>
-                    <h3 className='text-2xl font-bold mt-6'>Brand Recognition</h3>
-                    <p className='mt-4'>Boost your brand recognition with each clink. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                    <h3 className='text-2xl font-bold mt-6'>Fully Coustomizable</h3>
+                    <p className='mt-4'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
                 </div>
                 
 
