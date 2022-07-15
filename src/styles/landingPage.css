@@ -4,6 +4,7 @@
   --primary-hover: rgba(124, 210, 210, 0.945);
   --primary-dark: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
+  --secondary-placeHolder: hsl(0, 82%, 77%);
   --neutral-gray2: hsl(225, 33%, 95%); /* fondo cards */
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
@@ -12,8 +13,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  /* background: white;
-   */
 }
 
 /* navbar */
@@ -45,8 +44,11 @@ body {
   background-color: var(--primary-dark);
   z-index: -10;
 }
-input:required{
-  border: 2px solid red;
+.link:required{
+  border: 2px solid var(--secondary);
+}
+.link::placeholder{
+  color: var(--secondary-placeHolder);
 }
 .btn {
   background: var(--primary) !important;
