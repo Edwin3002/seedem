@@ -55,18 +55,6 @@ body {
   background-color: #ddffdd;
 }
 
-/* .link:required:invalid {
-  border-color: blue;
-} */
-/* .link{
-  border: 2px solid var(--primary);
-}
-.link:invalid ~ .errorMSG{
-  border: 2px solid var(--secondary);
-  color: var(--secondary-placeHolder);
-} */
-/* .link::placeholder{
-} */
 .btn {
   background: var(--primary) !important;
   padding: 1rem 2rem;

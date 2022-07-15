@@ -2,7 +2,7 @@ import React from 'react'
 
 export const PrincipalContent = () => {
   return (
-    <div className='flex flex-col-reverse lg:flex-row my-12 lg:my-20'>
+    <div className='flex flex-col-reverse lg:flex-row mt-12 lg:my-20'>
         <div className='flex flex-col mx-4 my-12 lg:my-auto text-center lg:text-left lg:mx-24 '>
             <h2 className='text-6xl font-bold textTitle'>
                 More than just shorter links
