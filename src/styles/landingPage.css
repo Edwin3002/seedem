@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 :root {
   --primary: hsl(180, 66%, 49%);
+  --primary-hover: rgba(124, 210, 210, 0.945);
   --primary-dark: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
-   --neutral-gray2: hsl(225, 33%, 95%);  /* fondo cards */
+  --neutral-gray2: hsl(225, 33%, 95%); /* fondo cards */
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
   --neutral-dark-gray: hsl(255, 11%, 22%);
@@ -14,11 +15,22 @@ body {
   /* background: white;
    */
 }
+
 /* navbar */
-.text-navBar{
-    color: var(--neutral-violet);
+.text-navBar {
+  color: var(--neutral-violet);
+}
+.text-navBar a:hover {
+  color: var(--neutral-dark-violet);
 }
 
+/* pricipal Content */
+.textTitle {
+  color: var(--neutral-dark-gray);
+}
+.textDescription {
+  color: var(--neutral-violet);
+}
 /* //formLink */
 .containerForm {
   background: linear-gradient(
@@ -26,21 +38,25 @@ body {
     white 0%,
     white 50%,
     var(--neutral-gray2) 50%,
-    var(--neutral-gray2) 100% /* var(--neutral-violet) 50%, */
-      /* var(--neutral-violet) 100% */
+    var(--neutral-gray2) 100% 
   );
 }
 .formLink {
   background-color: var(--primary-dark);
   z-index: -10;
 }
-
+input:required{
+  border: 2px solid red;
+}
 .btn {
   background: var(--primary) !important;
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: 700;
   color: white;
+}
+.btn:hover {
+  background: var(--primary-hover) !important;
 }
 
 /* cards */
@@ -71,7 +87,6 @@ body {
     margin-top: -6px;
     top: 38%;
     height: 100px;
-
   }
 }
 @media (min-width: 1256px) {
@@ -87,11 +102,18 @@ body {
 }
 
 /* footer */
-
-.containerFoot{
-    /* background: var(--neutral-gray2); */
-    background: var(--neutral-dark-violet);
+.containerFoot {
+  background: var(--neutral-dark-violet);
 }
-.textFoot{
-    color: var(--neutral-violet);
+.textFoot {
+  color: var(--neutral-violet);
+}
+.textFoot li:hover:not(h5) {
+  color: var(--primary);
+}
+.textFoot h5:hover {
+  color: white;
+}
+.social path:hover {
+  fill: var(--primary) !important;
 }

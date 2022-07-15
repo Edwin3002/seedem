@@ -1,4 +1,5 @@
 import React from 'react'
+import { Facebook, Instagram, Painterest, Twitter } from '../icons/socialNetwork'
 
 export const Footer = () => {
     return (
@@ -16,7 +17,7 @@ export const Footer = () => {
                 <span className=' flex flex-col w-full lg:w-1/2 lg:flex-row justify-around'>
                     <ul className='textFoot  text-center lg:text-left my-4'>
                         <li className='text-white font-bold my-4'>
-                            Features
+                            <h5>Features</h5>
                         </li>
                         <li className='my-2'>
                             Link Shortening
@@ -30,7 +31,7 @@ export const Footer = () => {
                     </ul>
                     <ul className='textFoot text-center lg:text-left my-4'>
                         <li className='text-white font-bold my-4'>
-                            Resources
+                            <h5>Resources</h5>
                         </li>
                         <li className='my-2'>
                             Blog
@@ -43,8 +44,8 @@ export const Footer = () => {
                         </li>
                     </ul>
                     <ul className='textFoot text-center lg:text-left my-4'>
-                        <li className='text-white font-bold my-4'>
-                            Company
+                        <li className='text-white hover:text-none font-bold my-4'>
+                            <h5>Company</h5>
                         </li>
                         <li className='my-2'>
                             About
@@ -61,18 +62,19 @@ export const Footer = () => {
                     </ul>
                 </span>
                 <span className='flex mx-auto w-1/3'>
-                    <ul className='flex  mx-auto w-full  lg:w-2/3  justify-between text-white my-4'>
+                    <ul className='flex  mx-auto w-full  lg:w-2/3  justify-between my-4 social'>
+
                         <li className='my-2'>
-                            <img className='mx-auto' alt='Facebook' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844424/seedem/icon-facebook_uelnds.svg' />
+                            <Facebook />
                         </li>
                         <li className='my-2'>
-                            <img className='mx-auto' alt='Twitter' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844425/seedem/icon-twitter_mppfae.svg' />
+                            <Twitter />
                         </li>
                         <li className='my-2'>
-                            <img className='mx-auto' alt='Painterest' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844425/seedem/icon-pinterest_hhi7hk.svg' />
+                            <Painterest />
                         </li>
                         <li className='my-2'>
-                            <img className='mx-auto' alt='Instagram' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844424/seedem/icon-instagram_zvpdsa.svg' />
+                            <Instagram />
                         </li>
                     </ul>
                 </span>
