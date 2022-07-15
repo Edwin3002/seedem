@@ -2,7 +2,7 @@
 :root {
   --primary: hsl(180, 66%, 49%);
   --primary-dark: hsl(257, 27%, 26%);
-  --secondary: hsl(257, 27%, 26%);
+  --secondary: hsl(0, 87%, 67%);
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
   --neutral-dark-gray: hsl(255, 11%, 22%);
@@ -10,7 +10,21 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background: white;
 }
-.btn{
-  background: var(--primary);
+
+
+/* //formLink */
+.formLink{
+    background-color: var(--primary-dark);
+    z-index: -10;
 }
+
+.btn {
+  background: var(--primary) !important;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  color: white;
+}
+

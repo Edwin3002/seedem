@@ -3,12 +3,12 @@ import React from 'react'
 export const PrincipalContent = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row'>
-        <div className='mx-auto my-8'>
-            <h2 className='text-2xl font-bold'>
+        <div className='mx-4 my-8 text-center lg:text-left lg:mx-24'>
+            <h2 className='text-4xl font-bold'>
                 More than just shorter links
             </h2>
-            <p>
-                Build your brand's recognition and get detailed insights on how yor links are performing
+            <p className='my-4'>
+                Build your brand's recognition and get detailed insights on how yor links are performing.
             </p>
             <button className='btn'>Get Started</button>
         </div>
