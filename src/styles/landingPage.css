@@ -14,6 +14,10 @@ body {
   /* background: white;
    */
 }
+/* navbar */
+.text-navBar{
+    color: var(--neutral-violet);
+}
 
 /* //formLink */
 .containerForm {
