@@ -4,7 +4,7 @@
   --primary-hover: rgba(124, 210, 210, 0.945);
   --primary-dark: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
-  --secondary-placeHolder: hsl(0, 82%, 77%);
+  --secondary-hover: hsl(0, 82%, 77%);
   --neutral-gray2: hsl(225, 33%, 95%); /* fondo cards */
   --neutral-gray: hsl(0, 0%, 75%);
   --neutral-violet: hsl(257, 7%, 63%);
@@ -13,6 +13,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
 
 /* navbar */
@@ -91,9 +92,16 @@ body {
 .btn:hover {
   background: var(--primary-hover) !important;
 }
-/* .btn2:hover {
-  background: var(--primary-hover) !important;
-} */
+.btnEmpty{
+  background: var(--secondary) !important;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.btnEmpty:hover {
+  background: var(--secondary-hover) !important;
+}
 .containerCardsUrl{
   background: var(--neutral-gray2);
 

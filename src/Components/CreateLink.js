@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getUrlShort } from '../helpers/shortCode';
 import uuid from 'react-uuid'
 import { CardsUrl } from './CardsUrl';
-
+import { addLocalStorage, emptyLocalStorage, verifyLocalStorage } from '../helpers/localStorage';
 
 export const CreateLink = () => {
     const [urlLong, setUrlLong] = useState('')
@@ -10,20 +10,33 @@ export const CreateLink = () => {
     const [listUrls, setListUrls] = useState([])
 
     const handletSubmit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         const urlshort = await getUrlShort(urlLong);
-        await addUrls(urlshort.result.full_short_link)
-
+        await addUrls(urlshort.result.full_short_link);
     }
 
     const handleChange = (e) => {
-        setUrlLong(e.target.value)
+        setUrlLong(e.target.value);
     }
 
     const addUrls = (short) => {
-        setListUrls([...listUrls, { urlL: urlLong, urlS: short, id: uuid() }])
-        formLinks.reset()
+        const data = [...listUrls, { urlL: urlLong, urlS: short, id: uuid() }]
+        setListUrls(data);
+        addLocalStorage(data);
+        formLinks.reset();
     }
+
+    const deleteLocalStorage = () => {
+        emptyLocalStorage();
+        setListUrls([])
+    }
+
+    useEffect(() => {
+        const verify = verifyLocalStorage()
+        if (verify !== undefined) {
+            setListUrls(verify)
+        }
+    }, [])
 
 
     return (
@@ -40,11 +53,19 @@ export const CreateLink = () => {
                 </div>
             </div>
             <div className='mx-auto w-11/12 lg:w-4/5 containerCardsUrl'>
-                {
+                {listUrls ?
                     listUrls.map(url => (
                         <CardsUrl data={url} key={url.id} />
-                    ))
+                    )) :
+                    null
                 }
+                <span className='flex mx-auto w-full'>
+                    {listUrls[0] ?
+                        <button className='btnEmpty w-2/3 md:w-1/3 lg:w-2/5 mx-auto mt-16' onClick={deleteLocalStorage}>Delete All Urls</button>
+                        :
+                        null
+                    }
+                </span>
             </div>
         </div>
     )
