@@ -22,7 +22,16 @@ body {
 .text-navBar a:hover {
   color: var(--neutral-dark-violet);
 }
-
+.navBarMobile{
+  background: var(--primary-dark);
+  color: white;
+}
+.navBarMobile a:hover{
+  color: var(--neutral-violet);
+}
+.navBarMobile li{
+  margin: 1rem auto;
+}
 /* pricipal Content */
 .textTitle {
   color: var(--neutral-dark-gray);
