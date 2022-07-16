@@ -37,14 +37,14 @@ body {
     white 0%,
     white 50%,
     var(--neutral-gray2) 50%,
-    var(--neutral-gray2) 100% 
+    var(--neutral-gray2) 100%
   );
 }
 .formLink {
   background-color: var(--primary-dark);
   z-index: -10;
 }
-.link{
+.link {
   border: 3px solid white;
 }
 .link:invalid {
@@ -52,9 +52,18 @@ body {
 }
 .link:valid {
   border-color: #4bcc4b;
-  background-color: #ddffdd;
+  background-color: #a7faa7 !important;
 }
-
+.textUrlLong {
+  color: var(--primary-dark);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline;
+  white-space: nowrap;
+}
+.textUrlShort {
+  color: var(--primary);
+}
 .btn {
   background: var(--primary) !important;
   padding: 1rem 2rem;
@@ -79,7 +88,7 @@ body {
 .vl {
   border-color: var(--primary);
   border-left: 8px solid var(--primary);
-  height: 800px;
+  height: 700px;
   position: absolute;
   left: 50%;
   margin-left: -6px;
