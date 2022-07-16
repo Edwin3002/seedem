@@ -4,10 +4,10 @@ import { Facebook, Instagram, Painterest, Twitter } from '../icons/socialNetwork
 export const Footer = () => {
     return (
         <div className='containerFoot'>
-            <div className='formLink  p-4  lg:p-10  w-full lg:mx-auto rounded bg-contain lg:bg-cover bg-no-repeat bg-right-top
+            <div className='formLink  p-  p-10  w-full lg:mx-auto rounded bg-contain lg:bg-cover bg-no-repeat bg-right-top
             //  bg-[url("https://res.cloudinary.com/edwin3002/image/upload/v1657844422/seedem/bg-boost-mobile_fi9ytz.svg")]
              lg:bg-[url("https://res.cloudinary.com/edwin3002/image/upload/v1657844422/seedem/bg-boost-desktop_zqetfh.svg")]'>
-                <h3 className='text-4xl font-bold text-center text-white'>Boost your links today</h3>
+                <h3 className='text-2xl lg:text-4xl font-bold text-center text-white'>Boost your links today</h3>
                 <button className='btn flex mx-auto my-4'>Get Started</button>
             </div>
             <footer className='flex flex-col w-full lg:flex-row justify-around'>
@@ -20,13 +20,13 @@ export const Footer = () => {
                             <h5>Features</h5>
                         </li>
                         <li className='my-2'>
-                            Link Shortening
+                            <span>Link Shortening</span>
                         </li>
                         <li className='my-2'>
-                            Branded Links
+                            <span>Branded Links</span>
                         </li>
                         <li className='my-2'>
-                            Analytics
+                            <span>Analytics</span>
                         </li>
                     </ul>
                     <ul className='textFoot text-center lg:text-left my-4'>
@@ -34,13 +34,13 @@ export const Footer = () => {
                             <h5>Resources</h5>
                         </li>
                         <li className='my-2'>
-                            Blog
+                            <span>Blog</span>
                         </li>
                         <li className='my-2'>
-                            Developers
+                            <span>Developers</span>
                         </li>
                         <li className='my-2'>
-                            Support
+                            <span>Support</span>
                         </li>
                     </ul>
                     <ul className='textFoot text-center lg:text-left my-4'>
@@ -48,22 +48,21 @@ export const Footer = () => {
                             <h5>Company</h5>
                         </li>
                         <li className='my-2'>
-                            About
+                            <span>About</span>
                         </li>
                         <li className='my-2'>
-                            Our Team
+                            <span>Our Team</span>
                         </li>
                         <li className='my-2'>
-                            Careeers
+                            <span>Careeers</span>
                         </li>
                         <li className='my-2'>
-                            Contact
+                            <span>Contact</span>
                         </li>
                     </ul>
                 </span>
-                <span className='flex mx-auto w-1/3'>
+                <span className='flex mx-auto w-2/3 lg:w-1/3'>
                     <ul className='flex  mx-auto w-full  lg:w-2/3  justify-between my-4 social'>
-
                         <li className='my-2'>
                             <Facebook />
                         </li>

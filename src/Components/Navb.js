@@ -34,7 +34,7 @@ export const Navb = () => {
                 </div> :
                     null}
             </div>
-            <div className='hidden w-1/3 xl:flex xl:py-8'>
+            <div className='hidden w-2/5 xl:flex xl:py-8'>
                 <ul className='flex w-full justify-between items-center text-navBar font-bold'>
                     <li>
                         <img className='mx-auto' alt='hamburger' src='https://res.cloudinary.com/edwin3002/image/upload/v1657844426/seedem/logo_jgfdfh.svg' />

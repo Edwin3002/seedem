@@ -156,7 +156,7 @@ body {
 .textFoot {
   color: var(--neutral-violet);
 }
-.textFoot li:hover:not(h5) {
+.textFoot span:hover{
   color: var(--primary);
 }
 .textFoot h5:hover {
