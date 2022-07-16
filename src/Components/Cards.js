@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Cards = () => {
     return (
-        <div className='containerCards relative'>
+        <div className='containerCards relative pt-16'>
             <div className="vl">f</div>
             <div className='text-center'>
                 <h2 className='text-3xl font-bold textTitle'>Advanced Statistics</h2>
@@ -29,9 +29,7 @@ export const Cards = () => {
                     </span>
                     <h3 className='text-2xl font-bold mt-6 textTitle'>Fully Coustomizable</h3>
                     <p className='mt-4 textDescription'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
-                </div>
-                
-
+                </div>          
             </div>
         </div>
     )

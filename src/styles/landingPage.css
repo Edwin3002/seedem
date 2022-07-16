@@ -71,11 +71,26 @@ body {
   font-weight: 700;
   color: white;
 }
+.btn2 {
+  background: var(--primary) !important;
+  background: var(--primary-dark) !important;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  color: white;
+}
 .btn:hover {
   background: var(--primary-hover) !important;
 }
+/* .btn2:hover {
+  background: var(--primary-hover) !important;
+} */
+.containerCardsUrl{
+  background: var(--neutral-gray2);
 
-/* cards */
+}
+
+/* cards advanced statistics*/
 .containerCards {
   background: var(--neutral-gray2);
 }
